@@ -22,5 +22,10 @@ repositories {
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
     compile 'org.hashids:hashids:1.0.1'
+    compile 'org.springframework:spring-orm:4.3.7.RELEASE'
+    compile 'org.hibernate:hibernate-core:5.2.8.Final'
+    compile 'org.apache.tomcat:tomcat-dbcp:8.5.11'
+    compile 'com.h2database:h2:1.4.192'
+
     testCompile 'junit:junit:4.11'
 }
