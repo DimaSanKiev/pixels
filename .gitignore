@@ -1,8 +1,6 @@
-.gradle/
-build/
 .idea/
-gradle/
-.gitattributes
-gradlew
-gradlew.bat
-settings.gradle
+.mvn/
+target/
+mvnw
+mvnw.cmd
+pixels.iml
