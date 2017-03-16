@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>Albums</title>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8"/>
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.7-1/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen"/>
+    <link href="../static/css/pixels.css"
+          th:href="@{css/pixels.css}"
+          rel="stylesheet" media="screen"/>
+</head>
+<body>
+<div class="container">
+    <div th:if="${not #lists.isEmpty(albums)}">
+        <h2>Albums</h2>
+        <table class="table table-striped">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+            <tr th:each="album : ${albums}">
+                <td th:text="${album.id}"></td>
+                <td th:text="${album.name}"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
