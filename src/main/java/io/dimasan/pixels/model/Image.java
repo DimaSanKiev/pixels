@@ -12,8 +12,7 @@ public class Image {
 
     private String description;
 
-    @Lob
-    private byte[] bytes;
+    private String url;
 
     @ManyToOne
     private Album album;
@@ -23,6 +22,8 @@ public class Image {
     private String username = "Dima";
 
     private boolean favorite;
+
+    private boolean privateImage = false;
 
     private String hash;
 
@@ -65,12 +66,12 @@ public class Image {
         this.description = description;
     }
 
-    public byte[] getBytes() {
-        return bytes;
+    public String getUrl() {
+        return url;
     }
 
-    public void setBytes(byte[] bytes) {
-        this.bytes = bytes;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public Album getAlbum() {
@@ -103,6 +104,14 @@ public class Image {
 
     public void setFavorite(boolean favorite) {
         this.favorite = favorite;
+    }
+
+    public boolean isPrivateImage() {
+        return privateImage;
+    }
+
+    public void setPrivateImage(boolean privateImage) {
+        this.privateImage = privateImage;
     }
 
     public String getHash() {
