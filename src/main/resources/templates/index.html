@@ -11,7 +11,15 @@
           rel="stylesheet" media="screen"/>
 </head>
 <body>
+<div class="container" th:replace="fragments/navbar :: navbar">
+    <p>navbar</p>
+</div>
+
 <h1>Hello World</h1>
 <h2>Thymeleaf index page</h2>
+
+<div class="container" th:replace="fragments/footer :: footer">
+    <p>footer</p>
+</div>
 </body>
 </html>

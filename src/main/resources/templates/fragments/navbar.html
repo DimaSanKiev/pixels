@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head lang="en">
-    <title>Album Name</title>
+    <title>Navbar</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -28,12 +28,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Pixels</a>
+                <a class="navbar-brand" th:href="@{/}">Pixels</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Gallery<span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Albums</a></li>
+                    <li><a th:href="@{/albums}">Albums</a></li>
                 </ul>
                 <form class="navbar-form navbar-left">
                     <div class="form-group">
