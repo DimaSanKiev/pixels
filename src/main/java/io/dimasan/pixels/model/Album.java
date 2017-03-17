@@ -16,6 +16,8 @@ public class Album {
     @Size(min = 2, max = 16)
     private String name;
 
+    private String coverUrl;
+
     @OneToMany(mappedBy = "album")
     private List<Image> images = new ArrayList<>();
 
@@ -36,6 +38,14 @@ public class Album {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getCoverUrl() {
+        return coverUrl;
+    }
+
+    public void setCoverUrl(String coverUrl) {
+        this.coverUrl = coverUrl;
     }
 
     public List<Image> getImages() {
