@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>Albums</title>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8"/>
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.7-1/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen"/>
+    <link href="../static/css/pixels.css"
+          th:href="@{css/pixels.css}"
+          rel="stylesheet" media="screen"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2 th:text="${album.name}">Album Name</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8">
+            <img src="../static/images/Java_logo.png" th:src="@{images/Java_logo.png}"
+                 alt="Java" width="100"/>
+        </div>
+    </div>
+</div>
+</body>
+</html>
