@@ -1,6 +1,7 @@
 .idea/
 .mvn/
 target/
+files/
 mvnw
 mvnw.cmd
 pixels.iml
