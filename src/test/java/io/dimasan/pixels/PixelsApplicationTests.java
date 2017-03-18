@@ -1,4 +1,4 @@
-package io.dimasan;
+package io.dimasan.pixels;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
