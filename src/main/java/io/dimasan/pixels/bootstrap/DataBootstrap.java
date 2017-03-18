@@ -37,9 +37,12 @@ public class DataBootstrap implements ApplicationListener<ContextRefreshedEvent>
     private void loadAlbums() {
         Album album1 = new Album();
         album1.setName("Test Album 1");
+        album1.setCoverUrl("@{images/Java_logo.png}");
         albumService.saveOrUpdate(album1);
+
         Album album2 = new Album();
         album2.setName("Test Album 2");
+        album2.setCoverUrl("@{images/ruby_logo.png}");
         albumService.saveOrUpdate(album2);
     }
 
